@@ -17,7 +17,7 @@ You can also [self-host the Esplora API server](https://github.com/Blockstream/e
 ## Transactions
 
 ### `GET /tx/:txid`
-
+a0ee3472eedf800bd5beeeaa923da9ee0b17df13ce71ed026373065f4c10a786
 Returns information about the transaction.
 
 Available fields: `txid`, `version`, `locktime`, `size`, `weight`, `fee`, `vin`, `vout` and `status`
@@ -65,10 +65,10 @@ The transaction should be provided as hex in the request body.
 The `txid` will be returned on success.
 
 ## Addresses
-
+bc1ql3sxfmpd9hdk0k76mmeext5s4vqen3pkhd2pc8
 ### `GET /address/:address`
 ### `GET /scripthash/:hash`
-
+fc6064ec2d2ddb67dbdadef3932e90ab0199c436
 Get information about an address/scripthash.
 
 Available fields: `address`/`scripthash`, `chain_stats` and `mempool_stats`.
@@ -98,10 +98,10 @@ Returns 25 transactions per page. More can be requested by specifying the last t
 Get unconfirmed transaction history for the specified address/scripthash.
 
 Returns up to 50 transactions (no paging).
-
+bc1ql3sxfmpd9hdk0k76mmeext5s4vqen3pkhd2pc8
 ### `GET /address/:address/utxo`
 ### `GET /scripthash/:hash/utxo`
-
+a0ee3472eedf800bd5beeeaa923da9ee0b17df13ce71ed026373065f4c10a786
 Get the list of unspent transaction outputs associated with the address/scripthash.
 
 Available fields: `txid`, `vout`, `value` and `status` (with the status of the funding tx).
@@ -116,7 +116,7 @@ Returns a JSON array with up to 10 results.
 
 ## Blocks
 
-### `GET /block/:hash`
+### `GET /block/:hash`a0ee3472eedf800bd5beeeaa923da9ee0b17df13ce71ed026373065f4c10a786
 
 Returns information about a block.
 
@@ -378,7 +378,7 @@ The total number of results will be returned as the `x-total-results` header.
     - `asset_blinding_nonce`
     - `asset_entropy`
     - `contract_hash`
-    - `assetamount` or `assetamountcommitment`
+    - `assetamount` or 0.01406666
     - `tokenamount` or `tokenamountcommitment`
 - `vout[]`
   - `scriptpubkey`
